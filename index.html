@@ -25,7 +25,31 @@
 
   <style amp-custom>
     /* Jalur CSS Utama Valid AMP */
-    :root{--gold:#ffd86b;--red:#8b0000}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:#000;color:#fff;overflow-x:hidden;line-height:1.6}.container{width:100%;max-width:1200px;margin:auto;padding:0 18px}header{background:#0b0b0b;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;z-index:999}header h1{font-size:38px;text-align:center;color:var(--gold);font-weight:900}.nav-wrapper{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-top:15px}.nav-item{text-decoration:none;color:#fff;font-size:13px;font-weight:700;padding:10px 18px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.nav-item.active{background:var(--red);color:var(--gold)}.btn-reg{background:linear-gradient(90deg,#8b0000,#ff0000);color:#fff;padding:11px 22px;border-radius:10px;font-weight:800;text-decoration:none;font-size:13px;box-shadow:0 0 15px rgba(255,0,0,.35)}.hero-slider{margin-top:25px;border-radius:20px;overflow:hidden}.section-title{font-size:24px;margin:40px 0 20px;color:var(--gold);font-weight:800}.game-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}.game-card{background:#111;padding:10px;border-radius:14px;text-align:center;border:1px solid rgba(255,255,255,.06);transition:.25s ease}.game-card:hover{transform:translateY(-4px);border-color:#ffd86b}.provider .game-card amp-img{padding:6px;background:#0e0e0e;border-radius:12px}.provider .game-card span{font-size:11px;opacity:.9}.game-card amp-img{border-radius:12px;overflow:hidden}.game-card span{display:block;margin-top:8px;font-size:12px;font-weight:700}.seo-box{background:#111;padding:30px;border-radius:20px;margin-top:40px;border:1px solid rgba(255,255,255,.06)}.seo-box p{color:#bbb;margin-bottom:15px}.faq-item{margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid rgba(255,255,255,.08)}.faq-item h3{color:var(--gold);margin-bottom:8px}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review-card{background:#151515;padding:20px;border-radius:18px;border:1px solid rgba(255,255,255,.06)}.review-card h4{color:var(--gold);margin-bottom:10px}.review-card span{color:#ffcc00;display:block;margin-bottom:10px}footer{margin-top:60px;padding:30px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#777}strong{color:#ffd86b;font-weight:800}.provider{margin-top:50px}@media(max-width:768px){.game-grid{grid-template-columns:repeat(4,1fr)}.review-grid{grid-template-columns:1fr}}@media(max-width:480px){header h1{font-size:28px}.nav-item{width:48%;text-align:center;font-size:12px}.btn-reg{width:100%;text-align:center}.game-grid{grid-template-columns:repeat(2,1fr);gap:10px}.section-title{font-size:20px}.seo-box{padding:20px}}
+    :root{--gold:#ffd86b;--red:#8b0000}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:#000;color:#fff;overflow-x:hidden;line-height:1.6}.container{width:100%;max-width:1200px;margin:auto;padding:0 18px}header{background:#0b0b0b;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;z-index:999}header h1{font-size:38px;text-align:center;color:var(--gold);font-weight:900}.nav-wrapper{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-top:15px}.nav-item{text-decoration:none;color:#fff;font-size:13px;font-weight:700;padding:10px 18px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.nav-item.active{background:var(--red);color:var(--gold)}.btn-reg{background:linear-gradient(90deg,#8b0000,#ff0000);color:#fff;padding:11px 22px;border-radius:10px;font-weight:800;text-decoration:none;font-size:13px;box-shadow:0 0 15px rgba(255,0,0,.35)}.hero-slider{margin-top:25px;border-radius:20px;overflow:hidden}.section-title{font-size:24px;margin:40px 0 20px;color:var(--gold);font-weight:800}.game-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}.game-card{background:#111;padding:10px;border-radius:14px;text-align:center;border:1px solid rgba(255,255,255,.06);transition:.25s ease}.game-card:hover{transform:translateY(-4px);border-color:#ffd86b}.game-card amp-img{border-radius:12px;overflow:hidden}.game-card span{display:block;margin-top:8px;font-size:12px;font-weight:700}.seo-box{background:#111;padding:30px;border-radius:20px;margin-top:40px;border:1px solid rgba(255,255,255,.06)}.seo-box p{color:#bbb;margin-bottom:15px}.faq-item{margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid rgba(255,255,255,.08)}.faq-item h3{color:var(--gold);margin-bottom:8px}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review-card{background:#151515;padding:20px;border-radius:18px;border:1px solid rgba(255,255,255,.06)}.review-card h4{color:var(--gold);margin-bottom:10px}.review-card span{color:#ffcc00;display:block;margin-bottom:10px}footer{margin-top:60px;padding:30px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#777}strong{color:#ffd86b;font-weight:800}.provider{margin-top:50px}
+
+    /* PERBAIKAN CSS: Pengatur khusus Logo Provider agar kecil proporsional */
+    .provider .game-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 10px;
+    }
+    .provider .game-card amp-img {
+      max-width: 100px; /* Batasi lebar gambar agar tidak melebar raksasa */
+      width: 100%;
+      background: transparent;
+      padding: 0;
+      margin: 0 auto;
+    }
+    .provider .game-card span {
+      font-size: 11px;
+      font-weight: bold;
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    @media(max-width:768px){.game-grid{grid-template-columns:repeat(4,1fr)}.review-grid{grid-template-columns:1fr}}@media(max-width:480px){header h1{font-size:28px}.nav-item{width:48%;text-align:center;font-size:12px}.btn-reg{width:100%;text-align:center}.game-grid{grid-template-columns:repeat(2,1fr);gap:10px}.section-title{font-size:20px}.seo-box{padding:20px}}
   </style>
 </head>
 
@@ -51,86 +75,88 @@
     </section>
 
     <section>
-  <h2 class="section-title">GAME POPULER HARI INI</h2>
-  <div class="game-grid">
-    <div class="game-card">
-      <amp-img src="assets/img/olympus.jpg" width="300" height="300" layout="responsive" alt="Gates of Olympus"></amp-img>
-      <span>Gates of Olympus</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/Fortune Tiger.jpg" width="300" height="300" layout="responsive" alt="Fortune Tiger"></amp-img>
-      <span>Fortune Tiger</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/mahjongways2.jpg" width="300" height="300" layout="responsive" alt="Mahjong Ways 2"></amp-img>
-      <span>Mahjong Ways 2</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/Lucky Neko.jpg" width="300" height="300" layout="responsive" alt="Lucky Neko"></amp-img>
-      <span>Lucky Neko</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/muscle-fortune.jpg" width="300" height="300" layout="responsive" alt="Muscle Fortune"></amp-img>
-      <span>Muscle Fortune</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/Aztec Gems.jpg" width="300" height="300" layout="responsive" alt="Aztec Gems"></amp-img>
-      <span>Aztec Gems</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/Gates of Gatot Kaca.jpg" width="300" height="300" layout="responsive" alt="Gates of Gatot Kaca"></amp-img>
-      <span>Gates of Gatot Kaca</span>
-    </div>
-  <div class="game-card">
-      <amp-img src="assets/Gem Saviour Conquest.jpg" width="300" height="300" layout="responsive" alt="Gem Saviour Conquest"></amp-img>
-      <span>Gem Saviour Conquest</span>
-    </div>
-  </div class="game-card">
-      <amp-img src="koi-gate.jpg" width="300" height="300" layout="responsive" alt="koi-gate"></amp-img>
-      <span>Koi-Gate</span>
-    </div>
-</section>
+      <h2 class="section-title">GAME POPULER HARI INI</h2>
+      <div class="game-grid">
+        <div class="game-card">
+          <amp-img src="assets/img/olympus.jpg" width="300" height="300" layout="responsive" alt="Gates of Olympus"></amp-img>
+          <span>Gates of Olympus</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/Fortune Tiger.jpg" width="300" height="300" layout="responsive" alt="Fortune Tiger"></amp-img>
+          <span>Fortune Tiger</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/mahjongways2.jpg" width="300" height="300" layout="responsive" alt="Mahjong Ways 2"></amp-img>
+          <span>Mahjong Ways 2</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/Lucky Neko.jpg" width="300" height="300" layout="responsive" alt="Lucky Neko"></amp-img>
+          <span>Lucky Neko</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/muscle-fortune.jpg" width="300" height="300" layout="responsive" alt="Muscle Fortune"></amp-img>
+          <span>Muscle Fortune</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/Aztec Gems.jpg" width="300" height="300" layout="responsive" alt="Aztec Gems"></amp-img>
+          <span>Aztec Gems</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/Gates of Gatot Kaca.jpg" width="300" height="300" layout="responsive" alt="Gates of Gatot Kaca"></amp-img>
+          <span>Gates of Gatot Kaca</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/Gem Saviour Conquest.jpg" width="300" height="300" layout="responsive" alt="Gem Saviour Conquest"></amp-img>
+          <span>Gem Saviour Conquest</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/olympus.jpg" width="300" height="300" layout="responsive" alt="Koi-Gate"></amp-img>
+          <span>Koi-Gate</span>
+        </div>
+      </div>
+    </section>
 
-<section class="provider">
-  <h2 class="section-title">PROVIDER POPULER</h2>
-  <div class="game-grid">
-    <div class="game-card">
-      <amp-img src="assets/img/pp-active.webp" width="120" height="60" layout="responsive" alt="Pragmatic Play"></amp-img>
-      <span>Pragmatic Play</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/pgsoft-active.webp" width="120" height="60" layout="responsive" alt="PG Soft"></amp-img>
-      <span>PG Soft</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/no-limit-city-active.webp" width="120" height="60" layout="responsive" alt="NoLimit City"></amp-img>
-      <span>NoLimit City</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/jili-active.webp" width="120" height="60" layout="responsive" alt="JILI Gaming"></amp-img>
-      <span>JILI Gaming</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/microgaming-active.webp" width="120" height="60" layout="responsive" alt="Microgaming"></amp-img>
-      <span>Microgaming</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="assets/img/spade-gaming-active.webp" width="120" height="60" layout="responsive" alt="Spadegaming"></amp-img>
-      <span>Spadegaming</span>
-    </div>
-  <div class="game-card">
-      <amp-img src="slot88-active.webp" width="120" height="60" layout="responsive" alt="Slot88"></amp-img>
-      <span>Slot88</span>
-    </div>
-  <div class="game-card">
-      <amp-img src="playngo-active.webp" width="120" height="60" layout="responsive" alt="playngo"></amp-img>
-      <span><P></P>layngo</span>
-    </div>
-    <div class="game-card">
-      <amp-img src="playtech-active.webp" width="120" height="60" layout="responsive" alt="playtech"></amp-img>
-      <span>Playtech</span>
-    </div>
-</section>
+    <section class="provider">
+      <h2 class="section-title">PROVIDER POPULER</h2>
+      <div class="game-grid">
+        <div class="game-card">
+          <amp-img src="assets/img/pp-active.webp" width="120" height="60" layout="responsive" alt="Pragmatic Play"></amp-img>
+          <span>Pragmatic Play</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/pgsoft-active.webp" width="120" height="60" layout="responsive" alt="PG Soft"></amp-img>
+          <span>PG Soft</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/no-limit-city-active.webp" width="120" height="60" layout="responsive" alt="NoLimit City"></amp-img>
+          <span>NoLimit City</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/jili-active.webp" width="120" height="60" layout="responsive" alt="JILI Gaming"></amp-img>
+          <span>JILI Gaming</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/microgaming-active.webp" width="120" height="60" layout="responsive" alt="Microgaming"></amp-img>
+          <span>Microgaming</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/spade-gaming-active.webp" width="120" height="60" layout="responsive" alt="Spadegaming"></amp-img>
+          <span>Spadegaming</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/slot88-active.webp" width="120" height="60" layout="responsive" alt="Slot88"></amp-img>
+          <span>Slot88</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/playngo-active.webp" width="120" height="60" layout="responsive" alt="Playtech"></amp-img>
+          <span>Play'n GO</span>
+        </div>
+        <div class="game-card">
+          <amp-img src="assets/img/playtech-active.webp" width="120" height="60" layout="responsive" alt="Playtech"></amp-img>
+          <span>Playtech</span>
+        </div>
+      </div>
+    </section>
 
     <section class="seo-box">
       <h2 class="section-title">BOLA68 Strategi Bermain Game Modern VIP</h2>
