@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /assets/img/
+
+# Sitemaps
+Sitemap: https://bubuytest.github.io/bola68/sitemap.xml
